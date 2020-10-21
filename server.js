@@ -5,7 +5,7 @@ const app = express();
 const server = http.createServer(app);
 const socket = require("socket.io");
 const io = socket(server);
-const PORT = process.env.port || 4040;
+const PORT = process.env.port || 8080;
 
 
 app.use(express.static(path.join(__dirname, 'webcam', 'build' )))
